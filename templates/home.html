@@ -1,17 +1,98 @@
 {% extends "base.html" %}
 {% block content %}
-  <ul style="display:flex;flex-flow:column;gap:10px">
-    {% for post in posts %}
-    <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4" role="alert">
-       <p class="font-bold font-nototc">{{ post.title }}</p>
-       <p>{{ post.body }}</p>
+<ul style="display:flex;flex-flow:column;gap:10px">
+  {% for post in posts %}
+  <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4" role="alert">
+    <p class="font-bold font-nototc">{{ post.title }}</p>
+    <p>{{ post.body }}</p>
+  </div>
+  {% endfor %}
+</ul>
+<h1>
+  <i class="fas fa-hamburger fa-2x pink"></i> Font<br>
+  <i class="fas fa-hamburger fa-5x fa-spin lime"></i> Awesome<br>
+  <i class="fas fa-hamburger fa-10x gold"></i> v6<br>
+  <i class="fas fa-hamburger fa-lg aqua"></i> Free
+</h1>
+
+
+
+<div class="bg-slate-100 text-gray-600 min-h-screen">
+  <div class="container mx-auto py-16 px-12">
+  <details class="bg-white shadow rounded group mb-4" open>
+    <summary class="list-none flex flex-wrap items-center cursor-pointer
+    focus-visible:outline-none focus-visible:ring focus-visible:ring-pink-500
+    rounded group-open:rounded-b-none group-open:z-[1] relative
+    ">
+      <h3 class="flex flex-1 p-4 font-semibold">How To Build Collapsible Component With Tailwindcss?</h3>
+      <div class="flex w-10 items-center justify-center">
+        <div class="border-8 border-transparent border-l-gray-600 ml-2
+        group-open:rotate-90 transition-transform origin-left
+        "></div>
+      </div>
+    </summary>
+    <div class="p-4">
+      <p>You can <a class="text-pink-500 hover:text-pink-300 hover:underline" href="https://youtu.be/CS2bsaFRECo">watch the video</a> 🎦 on how to build collapsible component from scratch with HTML and Tailwindcss only (no javascript).</p>
     </div>
-    {% endfor %}
-  </ul>
-  <h1>
-    <i class="fas fa-hamburger fa-2x pink"></i> Font<br> 
-    <i class="fas fa-hamburger fa-5x fa-spin lime"></i> Awesome<br>
-    <i class="fas fa-hamburger fa-10x gold"></i> v6<br> 
-    <i class="fas fa-hamburger fa-lg aqua"></i> Free
-  </h1>
+  </details>      
+
+  <details class="bg-white shadow rounded group mb-4">
+    <summary class="list-none flex flex-wrap items-center cursor-pointer
+    focus-visible:outline-none focus-visible:ring focus-visible:ring-pink-500
+    rounded group-open:rounded-b-none group-open:z-[1] relative
+    ">
+      <h3 class="flex flex-1 p-4 font-semibold">How do I get more references?</h3>
+      <div class="flex w-10 items-center justify-center">
+        <div class="border-8 border-transparent border-l-gray-600 ml-2
+        group-open:rotate-90 transition-transform origin-left
+        "></div>
+      </div>
+    </summary>
+    <div class="p-4">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum praesentium officia nostrum iste eaque,
+        explicabo sunt, voluptatum mollitia corporis porro repudiandae. Eaque neque voluptatum sint molestiae? Assumenda
+        eligendi facilis reprehenderit.</p>
+    </div>
+  </details>
+  <details class="bg-white shadow rounded group mb-4">
+    <summary class="list-none flex flex-wrap items-center cursor-pointer
+    focus-visible:outline-none focus-visible:ring focus-visible:ring-pink-500
+    rounded group-open:rounded-b-none group-open:z-[1] relative
+    ">
+      <h3 class="flex flex-1 p-4 font-semibold">How do I get a reference?</h3>
+      <div class="flex w-10 items-center justify-center">
+        <div class="border-8 border-transparent border-l-gray-600 ml-2
+        group-open:rotate-90 transition-transform origin-left
+        "></div>
+      </div>
+    </summary>
+    <div class="p-4">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum praesentium officia nostrum iste eaque,
+        explicabo sunt, voluptatum mollitia corporis porro repudiandae. Eaque neque voluptatum sint molestiae? Assumenda
+        eligendi facilis reprehenderit.</p>
+    </div>
+  </details>
+
+  <details class="bg-white shadow rounded group mb-4">
+    <summary class="list-none flex flex-wrap items-center cursor-pointer
+    focus-visible:outline-none focus-visible:ring focus-visible:ring-pink-500
+    rounded group-open:rounded-b-none group-open:z-[1] relative
+    ">
+      <h3 class="flex flex-1 p-4 font-semibold">How do I get another references?</h3>
+      <div class="flex w-10 items-center justify-center">
+        <div class="border-8 border-transparent border-l-gray-600 ml-2
+        group-open:rotate-90 transition-transform origin-left
+        "></div>
+      </div>
+    </summary>
+    <div class="p-4">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum praesentium officia nostrum iste eaque,
+        explicabo sunt, voluptatum mollitia corporis porro repudiandae. Eaque neque voluptatum sint molestiae? Assumenda
+        eligendi facilis reprehenderit.</p>
+    </div>
+  </details>
+  </div>
+</div>
+
+
 {% endblock content %}
